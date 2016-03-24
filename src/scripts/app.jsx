@@ -10,23 +10,30 @@ var WeUI = require('react-weui');
 // require('./js/lib/jquery.cookie');
 window.$ = require('./js/lib/zepto');
 require('./js/lib/zepto.cookie');
-console.log(ReactRouter)
+
+// global export
+window.Util = require('./js/util');
+window.Api = require('./js/api');
+// console.log(ReactRouter)
 
 var Loading = require('./jsx/component/loading');
 var NoMatch = require('./jsx/component/noMatch');
 var Sign = require('./jsx/sign');
 var Demo = require('./jsx/demo');
 var RouterDemo = require('./jsx/routerDemo');
-var WeuiDemo = require('./jsx/weuiDemo');
+var Auth = require('./jsx/auth');
+var Myview = require('./jsx/myview');
+var Courses = require('./jsx/courses');
 
 ReactDOM.render(<Loading />, document.getElementById('app-loading'));
 ReactDOM.render((
   <Router history={BrowserHistory}>
-    <Route path="/" components={RouterDemo}></Route>
+    <Route path="/" components={Auth}></Route>
     <Route path="/demo" components={Demo}></Route>
     <Route path="/sign/:type" components={Sign}></Route>
     <Route path="/routerDemo" components={RouterDemo}></Route>
-    <Route path="/weuiDemo" components={WeuiDemo}></Route>
+    <Route path="/myview" components={Myview}></Route>
+    <Route path="/courses" components={Courses}></Route>
     <Route path="*" component={NoMatch}/>
   </Router>
 ), document.getElementById('app'));

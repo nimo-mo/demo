@@ -20,6 +20,10 @@ app.post('/demo', function (request, response) {
   response.sendFile(path.resolve(__dirname, 'response', 'demo.json'));
 });
 
+app.post('/auth', function (request, response) {
+  response.sendFile(path.resolve(__dirname, 'response', 'auth.json'));
+});
+
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

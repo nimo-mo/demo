@@ -68,6 +68,11 @@ util.pushToLogin = function (loginPath,reactScope) {
 	reactScope.props.history.push(loginPath);
 };
 
+util.getQueryString = function (name) {
+  var reg = new RegExp('(^|\\?|&)'+ name +'=([^&]*)(\\s|&|$)', 'i');  
+  return reg.test(location.href) ? unescape(RegExp.$2.replace(/\+/g, ' ')) : '';
+},
+
 util.generateBlob = function (blobData, blobType) {
   var b, bb;
   if(window.Blob) {
