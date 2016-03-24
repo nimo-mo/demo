@@ -19,7 +19,7 @@ npm install gulp gulp-cli -g
 
 
 ##进入项目根目录安装依赖
-`cd path/to/react-pretty-router`
+`cd path/to/demo`
 
 `npm install`
 
@@ -29,7 +29,7 @@ npm install gulp gulp-cli -g
 
 
 ##启动服务
-`cd path/to/react-pretty-router` (open a new terminal window or tab)
+`cd path/to/demo` (open a new terminal window or tab)
 
 `npm start`
 
@@ -38,11 +38,3 @@ npm install gulp gulp-cli -g
 ##打包构建
 `gulp build`
 
-##相关资料
-gulp [gulp](http://gulpjs.com/)
-
-react [react](http://facebook.github.io/react/)
-
-nodejs [nodejs](https://nodejs.org/en/)
-
-webpack [webpack](https://webpack.github.io/)
