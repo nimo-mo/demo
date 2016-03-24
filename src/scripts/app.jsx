@@ -10,6 +10,7 @@ var WeUI = require('react-weui');
 // require('./js/lib/jquery.cookie');
 window.$ = require('./js/lib/zepto');
 require('./js/lib/zepto.cookie');
+console.log(ReactRouter)
 
 var Loading = require('./jsx/component/loading');
 var NoMatch = require('./jsx/component/noMatch');
