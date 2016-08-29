@@ -22,7 +22,7 @@ var Courses = React.createClass({
             <div className="weui_panel_bd">
                 <a href="javascript:void(0);" className="weui_media_box weui_media_appmsg">
                   <div className="weui_media_hd">
-                    <img src="" />
+                    <img alt="120x120" />
                   </div>
                   <div className="weui_media_bd">
                     <h4 className="weui_media_title">标题一</h4>
@@ -31,7 +31,7 @@ var Courses = React.createClass({
                 </a>
                 <a href="javascript:void(0);" className="weui_media_box weui_media_appmsg">
                   <div className="weui_media_hd">
-                    <img src="" />
+                    <img src="about:_blank" />
                   </div>
                   <div className="weui_media_bd">
                     <h4 className="weui_media_title">标题二</h4>
