@@ -39,8 +39,4 @@ npm install gulp gulp-cli -g
 `gulp build`
 
 
-##end
-
-##end2
-
-##end3
+##end1
